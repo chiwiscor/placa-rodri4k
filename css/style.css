@@ -1,0 +1,78 @@
+body{
+  font-family: 'poppinsmedium';
+  background: #f5f8fa;
+}
+.color-caja{
+  background: #fff;
+}
+.caja-secundaria{
+  color: #292f33;
+  background-color: #e1e8ed;
+  border-color: #e1e8ed;
+  padding: 20px;
+  border-radius: 20px;
+}
+#nav-container{
+  background:linear-gradient(to bottom, rgba(0, 0, 0, 0.27) 0%,rgba(10, 13, 14, 0.92) 100%), url(../ima/logo.jpg) no-repeat center;
+  background-size: contain;
+  height: 150px;
+  background-color: #030b0e;
+}
+footer{
+  background:linear-gradient(to bottom, rgba(0, 0, 0, 0.27) 0%,rgba(10, 13, 14, 0.92) 100%), url(../ima/logo.jpg) no-repeat center;
+  background-size: contain;
+  height: 150px;
+  background-color: #030b0e;
+}
+#placa-container{
+  padding: 50px 0;
+  text-align: center;
+}
+.box-list{
+  display: inline-block;
+}
+.box-list li{
+  float: none;
+}
+.titular {
+  font-family: 'alternategothic2_btregular';
+}
+
+.agradecimiento{
+  text-align: left;
+  padding: 10px;
+}
+
+#imagen-avatar img{
+  border-radius:10px;
+}
+#container-data-user .titular{
+  margin-bottom: 0;
+}
+
+.box-list li .box-case.box-casedefault,
+.box-list li .box-case.box-viewback  {
+  animation: mover 3s infinite;
+  animation-direction: alternate;
+  animation-fill-mode:forwards;
+}
+.raya{
+  position: relative;
+  width:  100%;
+  display: block;
+  padding: 10px;
+}
+.raya::after{
+  position: absolute;
+  content: " ";
+  width: 80%;
+  left: 10%;
+  bottom: 0;
+  height: 0;
+  border: solid #d92731 2px;
+  border-radius: 5px;
+}
+@keyframes mover {
+    from {transform: rotate3d(0,1,0,0deg);}
+    to {transform: rotate3d(0,1,0,35deg);}
+}
